@@ -1,0 +1,29 @@
+{
+    "name": "stianba/wordpress-composer-template",
+    "description": "A quick example of how to use wordpress with composer.",
+    "authors": [
+        {
+            "name": "Stian Bakkane",
+            "email": "stianba@gmail.com"
+        }
+    ],
+    "repositories": [
+      {
+        "type": "composer",
+        "url": "http://wpackagist.org"
+      }
+    ],
+    "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+      "wordpress-install-dir": "web/wp"
+    },
+    "require": {
+        "johnpbloch/wordpress": "^4.3",
+        "wpackagist-plugin/advanced-custom-fields": "^4.4",
+        "stianba/packagist-example": "^1.0"
+    }
+}

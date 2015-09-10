@@ -1,0 +1,6 @@
+/vendor/
+web/wp
+web/app/plugins
+web/app/mu-plugins
+!web/app/plugins/.gitkeep
+!web/app/mu-plugins/.gitkeep
